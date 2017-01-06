@@ -23,6 +23,8 @@ public:
 	/**
 	* Complex class Constructor.
 	* the class is built using the real and  imaginary part of the number as argument.
+	* @param num real part
+	* @param imaginary part
 	*/
 	Complex(double num = 0.0, double comp = 0.0);
 	/**
