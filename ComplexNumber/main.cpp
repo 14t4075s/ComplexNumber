@@ -3,8 +3,20 @@ using namespace std;
 
 int main()
 {
-	Complex c1(2, 3), c2(3, 2);
+	char t;
+	Complex c1(0, 0), c2(0, 0);
 	cout << "c1 =" << c1 << "\tc2 =" << c2 << endl;
-	cout << "Addition: " << c1 + c2 << "\nSubstraction: " << c1 - c2 << "\nMultiplication: " << c1*c2 << "\nDivision: " << c1 / c2 << "\n";
+	cout << "Addition: " << c1 + c2 << "\nSubstraction: " << c1 - c2 << "\nMultiplication: " << c1*c2 << "\nDivision: " ;
+	try
+	{
+		Complex c(0, 0);
+		c = c1 / c2;
+		cout << c << endl;
+	}
+	catch (const char* msg)
+	{
+		cerr << msg << endl;
+	}
+	cin >> t;
 	return 0;
 }
